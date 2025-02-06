@@ -1,3 +1,27 @@
 .div_tablero {
-    background-color: black;
+    background-color: wheat;
+}
+
+.tablero-div {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 13rem);
+    gap: 1rem;
+    padding: 10rem 10rem;
+}
+
+.carta-item {
+    border: 1px solid black;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 7rem;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
