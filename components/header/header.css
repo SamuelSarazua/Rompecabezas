@@ -1,3 +1,37 @@
-.div_header {
-    background-color: aqua;
+.div-header {
+    background-color: red;
+}
+
+.header {
+    width: 153.4rem;
+    background-color: beige;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header img {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 6rem;
+    height: 6rem;
+}
+
+.header h1 {
+    font-size: 20px;
+}
+
+.boton {
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
