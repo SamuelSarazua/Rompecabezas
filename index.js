@@ -1,13 +1,14 @@
 import { cargarCartas } from "./components/tablero/tablero.js";
-
+import { crearHeader } from "./components/header/header.js";
 
 let DOM = document.querySelector("#root");
 
 let contenedor = document.createElement(`div`);
 contenedor.className = "contenedor";
 
-let div_header = document.createElement(`div`);
+let div_header = document.createElement("div");
 div_header.className = "div_header";
+div_header.appendChild(crearHeader());
 contenedor.appendChild(div_header);
 
 let div_progreso = document.createElement(`div`);
