@@ -4,7 +4,6 @@
 
 .header {
     width: 153.4rem;
-    background-color: beige;
     gap: 5px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -34,4 +33,10 @@
     align-self: center;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.boton:hover {
+    transition: 0.5s;
+    background-color: gray;
 }

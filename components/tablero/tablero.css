@@ -4,6 +4,7 @@
 
 .tablero-div {
     display: grid;
+    height: 500px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 13rem);
     gap: 1rem;
@@ -20,8 +21,18 @@
 
     font-weight: 600;
     font-size: 7rem;
+    cursor: pointer;
 
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.carta-item:hover {
+    transition: 0.1s;
+    border: 2.5px solid red;
+}
+
+.marcado {
+    background-color: red;
 }

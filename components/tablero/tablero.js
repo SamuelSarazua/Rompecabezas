@@ -20,6 +20,8 @@ function cargarCartas() {
 
     return div;
 
+    
+
 };
 
 export { cargarCartas };
