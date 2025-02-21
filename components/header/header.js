@@ -18,11 +18,7 @@ function crearHeader() {
         header.appendChild(boton);
     }
 
-
     return header;
-
-
 }
-
 
 export { crearHeader };

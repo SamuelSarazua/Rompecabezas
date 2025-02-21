@@ -1,40 +1,18 @@
-import { mezclarCartas } from "./data.js";
+import { barajarCartas, cargarCartas } from "./funcionesCartas.js";
+import { cartas } from "./data.js";
 
-function item(contenido) {
-    let div = document.createElement('div');
-    div.className = "carta-item";
-
-    // Crear la cara frontal (oculta el contenido)
-    let frente = document.createElement('div');
-    frente.className = "cara frente";
-    frente.innerText = "?"; // Puedes cambiar esto por una imagen si lo deseas
-
-    // Crear la cara trasera (muestra la fruta cuando se voltea)
-    let atras = document.createElement('div');
-    atras.className = "cara atras";
-    atras.innerText = contenido;
-
-    // Agregar las caras al div principal de la carta
-    div.appendChild(frente);
-    div.appendChild(atras);
-
-    // Evento para voltear la carta
-    div.addEventListener("click", () => {
-        div.classList.toggle("volteada");
-    });
-
-    return div;
+// Función para mezclar las cartas
+function mezclarCartas() {
+    let todas_las_cartas = cartas.concat(cartas); // Aquí se duplica el listado de cartas
+    
+    return barajarCartas(todas_las_cartas); // Aqui se barajea las cartas cada vez q se reinicie la pagina
 }
 
-function cargarCartas() {
-    let div = document.createElement('div');
-    div.className = "tablero-div";
+// Función para cargar las cartas en el tablero
+function cargarTablero() {
+    let cartasMezcladas = mezclarCartas(); // Se usa la funcion de mezclar las cartas de funcionesCartas.js
 
-    mezclarCartas().forEach((letra) => {
-        div.appendChild(item(letra));
-    });
-
-    return div;
+    return cargarCartas(cartasMezcladas);
 }
 
-export { cargarCartas };
+export { cargarTablero };
