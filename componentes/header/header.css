@@ -1,0 +1,26 @@
+.header {
+    width: 37.5rem;
+    height: 8rem;
+    background-color: bisque;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.div_Num {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
